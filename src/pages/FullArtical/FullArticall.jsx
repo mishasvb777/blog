@@ -1,11 +1,9 @@
 import styles from './FullArtical.module.scss'
 import styles_user_info from '../HomeList/Artical.module.scss'
-
 import stylesArtical from '../HomeList/Artical.module.scss'
 import { useParams } from 'react-router-dom/cjs/react-router-dom'
 import { useSelector } from 'react-redux'
 import ReactMarkdown from 'react-markdown'
-
 import { Redirect } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import editArticalsSlice from '../../stores/editArticleSlice'
