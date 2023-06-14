@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-bottom: 26px;
+}
+
+.sign_link {
+  margin-right: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.sign_in {
+  margin-right: 30px;
+}
+
+.sign_up {
+  color: #52c41a;
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  padding: 6px 19px 10px;
+}
+
+.logo_text {
+  margin-left: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.create_article {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #52c41a;
+  border: 1px solid #52c41a;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-right: 26px;
+}
+
+.username {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-right: 13px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 27px;
+}
+
+.logout {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  padding: 7px 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+}

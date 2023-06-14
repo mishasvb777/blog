@@ -1,0 +1,14 @@
+.form_new_article {
+  display: flex;
+  flex-direction: column;
+  width: 874px;
+  margin: 0 auto;
+}
+
+.form_new_article input {
+  margin-bottom: 21px;
+}
+
+.text_area {
+  resize: none;
+}
