@@ -10,7 +10,7 @@ import styles from './HomeList.module.scss'
 let key = 100
 const HomeList = () => {
   const [pages, setPages] = useState(localStorage.getItem('currentPage') || 0)
-  const [pagePagination, setPagePagination] = useState(localStorage.getItem('pagePagination') || 0)
+  const [pagePagination, setPagePagination] = useState(localStorage.getItem('pagePagination') || 1)
   const dispatch = useDispatch()
   const articles = useSelector((state) => state.articles.articles)
 
