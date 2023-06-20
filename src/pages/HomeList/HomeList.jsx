@@ -9,7 +9,8 @@ import styles from './HomeList.module.scss'
 
 let key = 100
 const HomeList = () => {
-  const [pages, setPages] = useState(0)
+  const [pages, setPages] = useState(localStorage.getItem('currentPage') || 0)
+  const [pagePagination, setPagePagination] = useState(localStorage.getItem('pagePagination') || 0)
   const dispatch = useDispatch()
   const articles = useSelector((state) => state.articles.articles)
 
@@ -18,7 +19,13 @@ const HomeList = () => {
   }, [pages])
 
   const pageHandler = (page) => {
+    localStorage.setItem('currentPage', page)
     setPages(page)
+  }
+
+  const pagePaginationHandler = (page) => {
+    localStorage.setItem('pagePagination', page)
+    setPagePagination(page)
   }
 
   const dataArticles = articles.articles
@@ -33,9 +40,10 @@ const HomeList = () => {
         ))}
       <Pagination
         className={styles.pagination}
-        defaultCurrent={1}
+        defaultCurrent={pagePagination}
         total={50}
         onChange={(page) => {
+          pagePaginationHandler(page)
           pageHandler(page * 5 - 5)
         }}
       />

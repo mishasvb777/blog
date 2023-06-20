@@ -70,9 +70,9 @@ const Artical = ({ slug, linkStatus }) => {
                   setLikes={handleLike}
                 />
 
-                {dataArticle.tagList[0] !== '' && (
+                {dataArticle.tagList && (
                   <div>
-                    {dataArticle.tagList.map((el) => (
+                    {dataArticle.tagList.map((el) => (el.lenhgt > 0 &&
                       <span className={styles.tag} key={Math.random()}>
                         {el}
                       </span>

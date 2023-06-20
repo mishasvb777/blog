@@ -8,10 +8,16 @@ const CreateArticle = () => {
 
   const updateTags = (data) => {
     const arr = []
-    data.map((el) => arr.push(el.value))
+    console.log(data)
+    data.map((el) =>     
+    {
+      if(el.value.trim().length > 0){
+        arr.push(el.value)
+      } 
+    })
     setTags(arr)
   }
-
+  console.log(tags)
   const [isSucces, setSucces] = useState(false)
 
   const userInfo = useSelector((state) => state.authorization.userInfo)
@@ -23,7 +29,7 @@ const CreateArticle = () => {
         title: data.title,
         description: data.description,
         body: data.body,
-        tagList: tags,
+        tagList: tags || null,
       },
     }
 

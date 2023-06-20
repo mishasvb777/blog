@@ -28,10 +28,10 @@
   line-height: 28px;
   text-align: center;
   color: #262626;
+  
 }
-
-.form_new_article input {
-  margin-bottom: 21px;
+.label_titel{
+  margin-top: 21px;
 }
 
 .text_area {
@@ -76,9 +76,7 @@
   width: 150px;
 }
 
-.input_button_wrapper {
-  position: relative;
-}
+
 
 .tags_wrapper input {
   margin-right: 20px;
@@ -90,13 +88,34 @@
   border-color: #f5222d;
 }
 
-.add_tag_pos {
-  position: absolute;
-  bottom: 21px;
-  left: 505px;
-}
+
 
 .add_tag {
   color: #1890ff;
   border-color: #1890ff;
+}
+
+.errorForm {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+
+.errorForm p{
+  margin: 0;
+  font-size: 14px;
+}
+
+.input_button_wrapper{
+  display: flex;
+  align-items: flex-end
+}
+
+.button_wrapper_left input,
+.button_wrapper_right button{
+  margin-bottom: 20px;
+}
+
+.button_wrapper_right button{
+  margin-left: 20px;
 }

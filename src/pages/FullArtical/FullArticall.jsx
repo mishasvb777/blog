@@ -121,7 +121,7 @@ const FullArtical = () => {
               </div>
               {dataArticle.tagList[0] !== '' && (
                 <div>
-                  {dataArticle.tagList.map((el) => (
+                  {dataArticle.tagList.map((el) => (el.length > 0 &&
                     <span className={styles_user_info.tag} key={Math.random()}>
                       {el}
                     </span>
